@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change background color using Javascript</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 300px;
+            gap: 5px;
+        }
+        button{
+            height: 60px;
+            width: 60px;
+            border-radius: 100%;
+        }
+        .button1{
+            background-color: red;
+            cursor: pointer;
+            border: 2px solid black;
+        }
+        .button2{
+            background-color: yellow;
+            cursor: pointer;
+            border: 2px solid black;
+        }
+        .button3{
+            background-color: green;
+            cursor: pointer;
+            border: 2px solid black;
+        }
+        .button4{
+            background-color: blue;
+            cursor: pointer;
+            border: 2px solid black;
+        }
+        .button5{
+            background-color: orange;
+            cursor: pointer;
+            border: 2px solid black;
+        }
+        
+    </style>
+    <script>
+        function changeBodyBg(color){
+            document.body.style.background=color;
+   
+        }
+    </script>
+</head>
+<body>
+
+    <button class="button1" type="button" onmouseover="changeBodyBg('red');">Red</button>
+    <button class="button2" type="button" onmouseover="changeBodyBg('yellow');">yellow</button>
+    <button class="button3" type="button" onmouseover="changeBodyBg('green');">green</button>
+    <button class="button4" type="button" onmouseover="changeBodyBg('blue');">blue</button>
+    <button class="button5" type="button" onmouseover="changeBodyBg('orange');">orange</button>
+
+</body>
+</html>
